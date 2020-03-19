@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ansi-colors": "^4.1.1",
     "discord.js": "^12.0.2",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "table": "^5.4.6"
   }
 }
