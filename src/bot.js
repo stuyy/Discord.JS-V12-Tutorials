@@ -8,4 +8,5 @@ const { registerCommands, registerEvents } = require('./utils/registry');
     client.cachedMessageReactions = new Map();
     await registerEvents(client, '../events');
     await registerCommands(client, '../commands');
+    
 })();
