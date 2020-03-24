@@ -1,6 +1,6 @@
 module.exports = {
     columnDefault: {
-        width: 25
+        width: 30
     },
     columnCount: 3,
     border: {
