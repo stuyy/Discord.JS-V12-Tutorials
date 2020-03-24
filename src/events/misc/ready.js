@@ -8,7 +8,7 @@ module.exports = async (client) => {
     await loadTable(commandStatus, 50);
     console.log("\n");
     await loadTable(eventStatus, 50);
-    database.then(() => console.log("Connected to DB.")).catch(err => console.log(err));
+    // database.then(() => console.log("Connected to DB.")).catch(err => console.log(err));
 }
 function loadTable(arr, interval) {
     let fn, i = 0, stream = createStream(tableConfig);
