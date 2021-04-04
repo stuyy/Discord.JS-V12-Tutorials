@@ -10,7 +10,7 @@ module.exports = {
         }
         else {
             try {
-                let fetchedMessage = await message.channel.messages.fetch(args);
+                let fetchedMessage = await message.channel.messages.cache.get(args);
                 if(fetchedMessage) {
                     await message.channel.send("Please provide all of the emoji names with the role name, one by one, separated with a comma.\ne.g: snapchat, snapchat, where the emoji name comes first, role name comes second.");
                     let collector = new MessageCollector(message.channel, msgCollectorFilter.bind(null, message));
